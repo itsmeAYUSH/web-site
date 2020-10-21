@@ -62,7 +62,13 @@ p{
   box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
   background-color: white;
 }
-
+button{
+  size:40px;
+  align:center;
+}
+.test{
+  position:flex;
+}
 
 
 <!-----------------navi----------->
