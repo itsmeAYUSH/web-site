@@ -1,0 +1,92 @@
+body{
+  background-color: #00587a;
+  margin:0 0 0 0;
+}
+h1{
+  box-shadow:10px;
+  font-size: 55px;
+  background-color: #008891;
+}
+.NAVIGATIONS{
+  margin:0px 0px 0px 0px;
+  background-color: #0f3057;
+  display:flex;
+  list-style: none;
+  display: flex;
+  color: #edf0f1;
+  text-decoration: none;
+}
+.HEADINGS{
+  float: left;
+  margin:200px 0px 0px 150px;
+  font-size: 20px;
+  line-height:0px;
+  color: #e7e7de;
+}
+.IMAGE{
+  text-align: right;
+  margin:40px 100px 40px 100px;
+  box-shadow:20px 20px 20px 20px;
+  line-height: 0px;
+  border-radius:50px;
+}
+.ABOUT-ME{
+  border-radius:20px;
+  box-shadow: 2px 2px 20px 2px ;
+  position:relative ;
+  margin: 100px 200px 100px 200px;
+  align-items: center;
+  padding:10px;
+  background-color: white;
+}
+.aboutmeimage{
+  float:left;
+}
+p{
+  font-size: 20px;
+}
+.MID-CONTAINER{
+  margin: auto 100px auto 100px;
+}
+.BOXES{
+  display: flex;
+  justify-content: space-between;
+  margin: auto 50px 50px 50px;
+}
+
+.box1,.box2,.box3{
+  height:300px;
+  width:320px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+  background-color: white;
+}
+
+
+
+<!-----------------navi----------->
+
+
+header{
+}
+footer{
+  height:400px;
+  background-color: white;
+
+}
+.NAVIGATIONS a,
+.overlay__content a {
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+.NAVIGATIONS li {
+  padding: 20px 20px;
+}
+.NAVIGATIONS li a {
+  transition: color 0.3s ease 0s;
+}
+.NAVIGATIONS li a:hover {
+  color: #0088a9;
+}
