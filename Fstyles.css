@@ -1,11 +1,28 @@
 body{
   background-color: #00587a;
   margin:0 0 0 0;
+  line-height:35px;
 }
 h1{
-  box-shadow:10px;
   font-size: 55px;
-  background-color: #008891;
+  font-family: 'Henny Penny', cursive;
+
+}
+h2{
+  font-family: 'Tinos', serif;
+
+}
+h3{
+  color:#150485;
+  font-size:25px;
+  font-family: 'Turret Road', cursive;
+}
+hr{
+  width:600px;
+  border-style: none;
+  border-top-style:  dashed;
+  border-width:7px;
+  color:white;
 }
 .NAVIGATIONS{
   margin:0px 0px 0px 0px;
@@ -34,16 +51,19 @@ h1{
   border-radius:20px;
   box-shadow: 2px 2px 20px 2px ;
   position:relative ;
-  margin: 100px 200px 100px 200px;
+  margin: 100px 200px 50px 200px;
   align-items: center;
   padding:10px;
   background-color: white;
 }
-.aboutmeimage{
+.ABOUT-ME img{
   float:left;
+  padding:30px 30px;
 }
 p{
   font-size: 20px;
+  font-family: 'Patua One', cursive;
+
 }
 .MID-CONTAINER{
   margin: auto 100px auto 100px;
@@ -51,36 +71,50 @@ p{
 .BOXES{
   display: flex;
   justify-content: space-between;
-  margin: auto 50px 50px 50px;
+  margin: 50px 50px 50px 50px;
 }
 
 .box1,.box2,.box3{
-  height:300px;
+  height:400px;
   width:320px;
   background-repeat: no-repeat;
   background-size:cover;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
   background-color: white;
-}
-button{
-  size:40px;
-  align:center;
+  border-radius:20px;
 }
 .test{
   position:flex;
 }
 
+.BOXES p{
+  margin:0px 20px 0px 20px;
+}
 
-<!-----------------navi----------->
+.CONTACT{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 50px 50px 50px;
+  height: 50px;
+
+}
+
+
+<!--navi-->
 
 
 header{
 }
 footer{
-  height:400px;
+  height:200px;
   background-color: white;
-
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
+
+
 .NAVIGATIONS a,
 .overlay__content a {
   font-weight: 500;
@@ -95,4 +129,29 @@ footer{
 }
 .NAVIGATIONS li a:hover {
   color: #0088a9;
+}
+
+
+.button {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:25px;
+	font-weight:bold;
+	padding:10px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.button:active {
+	position:relative;
+	top:1px;
 }
