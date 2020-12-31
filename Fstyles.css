@@ -204,6 +204,27 @@ margin-bottom: 100px;
 .containerA img{
   float: right;
 }
+@media (max-width:1000px) {
+  .containerA{
+    margin-left: 15px;
+    margin-top: 40px;
+  }
+  .containerA h1{
+    font-size: 60px;
+}
+  .containerA h2{
+    font-size: 30px;
+  }
+  .containerA img{
+    height: 300px;
+  }
+}
+@media (max-width:1000px) {
+  .slantedDivA:after{
+    height:60%;
+  }
+
+}
 
 .containerB{
   margin: 100px 0px 100px 100px;
@@ -291,6 +312,15 @@ margin-bottom: 100px;
   height: 150px;
   padding: 50px 50px 50px 50px;
   letter-spacing: 10px;
+}
+@media (max-width:1000px) {
+  .containerD h2{
+    font-size: 20px;
+    letter-spacing: 5px;
+
+
+  }
+
 }
 .containerE{
   padding:40px 0px 40px 0px;
