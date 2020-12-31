@@ -16,8 +16,8 @@ h1{
   font-family: 'Bad Script', cursive;
   color: #fcf8e8;
   font-size:70px;
-
 }
+
 h2{
 font-family: 'Raleway', sans-serif;
 color:#433d3c;
@@ -195,6 +195,7 @@ input[type="checkbox"]{
       transform: skewY(4deg);
 }
 
+
 .containerA{
 margin-top: 150px;
 margin-left: 150px;
@@ -205,12 +206,17 @@ margin-bottom: 100px;
 }
 
 .containerB{
-  margin: 0px 0px 100px 100px;
+  margin: 100px 0px 100px 100px;
   margin-right: 550px;
 }
 .containerB h2{
   margin-left: 30px;
   margin-bottom: 10px;
+}
+@media (max-width:850px){
+  .containerB{
+  margin: 50px 50px 50px 50px;
+  }
 }
 .containerC{
   text-align: center;
@@ -228,6 +234,11 @@ margin-bottom: 100px;
 .containerC h2{
   padding-top: 40px;
   color:#fcf8e8;
+}
+@media (max-width:800px) {
+  .containerC p {
+    padding: 30px 50px 90px 50px;
+  }
 }
 
 
@@ -262,8 +273,8 @@ margin-bottom: 100px;
   background: #c6ebc9;
   border-radius: 10px;
 }
-@media (max-width: 1000px){
-  BOXES{
+@media (max-width: 1200px){
+  .BOXES{
     display: grid;
   }
 }
@@ -275,13 +286,12 @@ margin-bottom: 100px;
   letter-spacing: 10px;
 }
 .containerE{
-  height:500px;
+  padding:40px 0px 40px 0px;
   background:#fff8c1;
   line-height: 70px;
 }
 .containerE a{
   color: black;
-  width: 100%;
 }
 
 .containerF{
@@ -292,16 +302,18 @@ margin-bottom: 100px;
   padding:37px;
 }
 .contactbutton{
-  text-align: center;
-
-    background: black;
-    border-color:transparent;
-
-    border-radius: 30px;
-
-
+    background:    #ffc85c;
+    border-radius: 1000px;
+    padding:       20px 45px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal  26px/1 "Open Sans", sans-serif;
+    text-align:    center;
 }
-
+.contactbutton:hover{
+  background-color:#ffb26b;
+  cursor: pointer;
+}
 
 
 #myBtn {

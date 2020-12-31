@@ -76,6 +76,6 @@ form .submit{
   padding:10px;
 }
 form .submit:hover{
-  background-color:red;
+  background-color:#f05454;
   cursor: pointer;
 }
