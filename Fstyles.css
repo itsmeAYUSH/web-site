@@ -276,6 +276,8 @@ margin-bottom: 100px;
 @media (max-width: 1200px){
   .BOXES{
     display: grid;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 .containerD{
