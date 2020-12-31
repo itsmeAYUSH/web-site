@@ -274,10 +274,15 @@ margin-bottom: 100px;
   border-radius: 10px;
 }
 @media (max-width: 1200px){
+
   .BOXES{
     display: grid;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  .box{
+    margin:0px 0px 0px 0px;
   }
 }
 .containerD{
