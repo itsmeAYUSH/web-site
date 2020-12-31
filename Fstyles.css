@@ -1,155 +1,344 @@
-body{
-  background-color: #00587a;
-  margin:0 0 0 0;
-  line-height:35px;
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Raleway&display=swap');
+
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 h1{
-  font-size: 55px;
-  font-family: 'Henny Penny', cursive;
+  font-weight: bold;
+  font-family: 'Bad Script', cursive;
+  color: #fcf8e8;
+  font-size:70px;
 
 }
 h2{
-  font-family: 'Tinos', serif;
-
+font-family: 'Raleway', sans-serif;
+color:#433d3c;
+font-size: 30px;
 }
 h3{
-  color:#150485;
-  font-size:25px;
-  font-family: 'Turret Road', cursive;
-}
-hr{
-  width:600px;
-  border-style: none;
-  border-top-style:  dashed;
-  border-width:7px;
-  color:white;
-}
-.NAVIGATIONS{
-  margin:0px 0px 0px 0px;
-  background-color: #0f3057;
-  display:flex;
-  list-style: none;
-  display: flex;
-  color: #edf0f1;
-  text-decoration: none;
-}
-.HEADINGS{
-  float: left;
-  margin:200px 0px 0px 150px;
-  font-size: 20px;
-  line-height:0px;
-  color: #e7e7de;
-}
-.IMAGE{
-  text-align: right;
-  margin:40px 100px 40px 100px;
-  box-shadow:20px 20px 20px 20px;
-  line-height: 0px;
-  border-radius:50px;
-}
-.ABOUT-ME{
-  border-radius:20px;
-  box-shadow: 2px 2px 20px 2px ;
-  position:relative ;
-  margin: 100px 200px 50px 200px;
-  align-items: center;
-  padding:10px;
-  background-color: white;
-}
-.ABOUT-ME img{
-  float:left;
-  padding:30px 30px;
+  font-size: 22px;
 }
 p{
-  font-size: 20px;
-  font-family: 'Patua One', cursive;
+  font-size: 21px;
+}
+body{
+  font-family: ;
+}
+nav{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: #ecb390;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav.logo{
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fcf8e8;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111d5e;
+  background: #d4e2d4;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
 
+#loading{
+  height: 100%;
+  width:100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color:black;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
-.MID-CONTAINER{
-  margin: auto 100px auto 100px;
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fed;
+  border-color: #fed transparent #fed transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+
+.slantedDivA{
+      position:;
+      width: 100%;
+      height: auto;
+      background:#df7861;;
+      box-sizing: border-box;
+      padding: 30px;
+      color: white;
+      margin-bottom:170px;
+}
+
+.slantedDivA:after{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: inherit;
+      z-index:-1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: top left;
+      transform: skewY(4deg);
+}
+
+.containerA{
+margin-top: 150px;
+margin-left: 150px;
+margin-bottom: 100px;
+}
+.containerA img{
+  float: right;
+}
+
+.containerB{
+  margin: 0px 0px 100px 100px;
+  margin-right: 550px;
+}
+.containerB h2{
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.containerC{
+  text-align: center;
+  background :#70af85;
+  color:white;
+  border-radius: 50px;
+}
+.containerC img {
+  background-color: white;
+  width:100%;
+}
+.containerC p{
+  padding: 50px 200px 100px 200px;
+}
+.containerC h2{
+  padding-top: 40px;
+  color:#fcf8e8;
+}
+
+
 .BOXES{
   display: flex;
-  justify-content: space-between;
-  margin: 50px 50px 50px 50px;
+  top:-60px;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+  position: relative;
 }
 
-.box1,.box2,.box3{
-  height:400px;
-  width:320px;
+.box{
+  height: auto;
+  width:auto;
   background-repeat: no-repeat;
   background-size:cover;
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+  box-shadow: 15px 5px 20px 10px rgba(1,0,0,0.3);
   background-color: white;
   border-radius:20px;
+  margin: 0px 50px 0px 50px;
 }
-.test{
-  position:flex;
+.box img{
+  margin-top: 20px;
 }
 
 .BOXES p{
-  margin:0px 20px 0px 20px;
+  margin: 20px 20px 10px 20px;
+}
+.BOXES H3{
+  margin-top: 10px;
+  background: #c6ebc9;
+  border-radius: 10px;
+}
+@media (max-width: 1000px){
+  BOXES{
+    display: grid;
+  }
+}
+.containerD{
+  text-align:center;
+  background-color: #ffc85c;
+  height: 150px;
+  padding: 50px 50px 50px 50px;
+  letter-spacing: 10px;
+}
+.containerE{
+  height:500px;
+  background:#fff8c1;
+  line-height: 70px;
+}
+.containerE a{
+  color: black;
+  width: 100%;
 }
 
-.CONTACT{
-  display: flex;
-  justify-content: space-between;
-  margin: 50px 50px 50px 50px;
-  height: 50px;
+.containerF{
+  text-align:center;
+  background:#222831;
+  color:WHITE;
+  height: 100px;
+  padding:37px;
+}
+.contactbutton{
+  text-align: center;
+
+    background: black;
+    border-color:transparent;
+
+    border-radius: 30px;
+
+
 }
 
 
-<!--navi-->
 
-
-header{
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ecb390;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 25px;
 }
-footer{
-  height:200px;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.NAVIGATIONS a,
-.overlay__content a {
-  font-weight: 500;
-  color: #edf0f1;
-  text-decoration: none;
-}
-.NAVIGATIONS li {
-  padding: 20px 20px;
-}
-.NAVIGATIONS li a {
-  transition: color 0.3s ease 0s;
-}
-.NAVIGATIONS li a:hover {
-  color: #0088a9;
+#myBtn:hover {
+  background-color: #555;
 }
 
+.wave {
+    position: ;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
-.button {
-	box-shadow: 0px 10px 14px -7px #276873;
-	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-	background-color:#599bb3;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Trebuchet MS;
-	font-size:25px;
-	font-weight:bold;
-	padding:10px 30px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #3d768a;
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
 }
-.button:hover {
-	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-	background-color:#408c99;
-}
-.button:active {
-	position:relative;
-	top:1px;
+
+.wave .shape-fill {
+    fill: #ffc85c;
 }
