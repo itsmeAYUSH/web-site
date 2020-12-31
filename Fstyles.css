@@ -173,7 +173,7 @@ input[type="checkbox"]{
       position:;
       width: 100%;
       height: auto;
-      background:#df7861;;
+      background:#ff7b54;;
       box-sizing: border-box;
       padding: 30px;
       color: white;
@@ -219,12 +219,7 @@ margin-bottom: 100px;
     height: 300px;
   }
 }
-@media (max-width:1000px) {
-  .slantedDivA:after{
-    height:60%;
-  }
 
-}
 
 .containerB{
   margin: 100px 0px 100px 100px;
@@ -241,8 +236,8 @@ margin-bottom: 100px;
 }
 .containerC{
   text-align: center;
-  background :#70af85;
-  color:white;
+  background :#ffc85c;
+  color:#30475e;
   border-radius: 50px;
 }
 .containerC img {
@@ -254,7 +249,7 @@ margin-bottom: 100px;
 }
 .containerC h2{
   padding-top: 40px;
-  color:#fcf8e8;
+  color:#222831;
 }
 @media (max-width:800px) {
   .containerC p {
@@ -291,7 +286,7 @@ margin-bottom: 100px;
 }
 .BOXES H3{
   margin-top: 10px;
-  background: #c6ebc9;
+  background: #f6d887;
   border-radius: 10px;
 }
 @media (max-width: 1200px){
