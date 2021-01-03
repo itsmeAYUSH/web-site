@@ -14,7 +14,7 @@
 h1{
   font-weight: bold;
   font-family: 'Bad Script', cursive;
-  color: #fcf8e8;
+  color: #222831;
   font-size:70px;
 }
 
@@ -36,7 +36,7 @@ nav{
   display: flex;
   height: 100px;
   width: 100%;
-  background: #ecb390;
+  background: #2f3847;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
@@ -55,12 +55,12 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: #fcf8e8;
+  color: #eeeeee;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
   padding: 8px 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
@@ -173,7 +173,7 @@ input[type="checkbox"]{
       position:;
       width: 100%;
       height: auto;
-      background:#ff7b54;;
+      background-image: linear-gradient(to right,  #fdb827, #e7a117 );
       box-sizing: border-box;
       padding: 30px;
       color: white;
