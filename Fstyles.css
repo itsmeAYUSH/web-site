@@ -173,7 +173,7 @@ input[type="checkbox"]{
       position:;
       width: 100%;
       height: auto;
-      background-image: linear-gradient(to right,  #fdb827, #e7a117 );
+      background-image: linear-gradient(to right,  #ffc85c, #e7a117 );
       box-sizing: border-box;
       padding: 30px;
       color: white;
