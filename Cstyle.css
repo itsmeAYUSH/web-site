@@ -106,9 +106,12 @@ form .submit:hover{
     letter-spacing: 5px;
     width: 50%;
     height: 150px;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 20px;
     border-radius: 70px;
     padding:10px;
+  }
+  .contact-form textarea{
+    height: 500px;
   }
 }
