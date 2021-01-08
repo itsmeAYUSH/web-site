@@ -229,14 +229,16 @@ input[type="checkbox"]{
       transform: skewY(10deg);
 }
 }
-@media (max-width:350px){
+@media (max-width:360px){
   .containerA img{
     margin-right: -20px;
 }
+.slantedDivA:after{
+    height:73%;
 }
-
+}
 .containerB{
-  margin: 100px 0px 100px 100px;
+  margin: 200px 0px 100px 100px;
   margin-right: 550px;
 }
 .containerB h2{
