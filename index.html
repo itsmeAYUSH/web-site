@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="alignstyle.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logox.svg">
-    <title>HOME</title>
+    <link rel="shortcut icon" href="relax.svg">
+    <title>AYUSH SAGAR</title>
   </head>
   <body>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
 <nav>
       <div class="logo"> <img src="relax.svg" alt="" height=100px;> </div>
 <input type="checkbox" id="click">
@@ -25,15 +29,15 @@
 <!---slanted---->
 <div class="slantedDivA">
     <div class="containerA">
-      <h2>HI I'M</h2>
+      <h2>Hi I'm</h2>
       <h1>AYUSH SAGAR</h1>
-      <i><h2 >A WEB DEVELOPER</h2></i>
+      <i><h2 >A Web developer</h2></i>
       <img src="myimg.png" alt="IMAGE NOT AVAILABLE" height="500px">
     </div>
   </div>
 
   <div class="containerB">
-    <span id="ABOUT">
+    <span id="ABOUT";>
     <h2>ABOUT ME</h2>
     <p>Hi, I'm Ayush Sagar from Mumbai, India. Currently, I'm a student of computer science and also looking forward to work and execute things in real life with full of enthusiasm.I can design UI/UX and develop responsive web-sites apart from these I also love electronic dance music.</p>
     </div>
@@ -83,34 +87,19 @@
 </div>
 <div class="containerE">
   <center><h2>  GET IN TOUCH</h2>
-    <h3><a href="https://www.facebook.com/profile.php?id=100004391059068"> <img src="facebook.svg" alt="" height="22px";> FACEBOOK</a><br>
-    <a href="https://www.instagram.com/ayushsagar05__________________/"><img src="instagram.svg" alt="" height="22px";> INSTAGRAM</a><br>
-    <a href="https://dribbble.com/itsFREELANCER"> <img src="dribble.svg" alt="" height="22px";>DRIBBLE</a><br>
-    <a href="https://github.com/itsmeAYUSH"> <img src="github.svg" alt="" height="22px";> GITHUB</a></center></h3>
+    <h3><a href="https://www.facebook.com/profile.php?id=100004391059068"> <img src="facebook.svg" alt="" height="30px";> </a>
+    <a href="https://www.instagram.com/ayushsagar05__________________/"><img src="instagram.svg" alt="" height="30px";> </a>
+    <a href="https://dribbble.com/itsFREELANCER"> <img src="dribble.svg" alt="" height="30px";></a>
+    <a href="https://github.com/itsmeAYUSH"> <img src="github.svg" alt="" height="30px";> </a></center></h3>
 
-      <center><div class="contactbutton">
-              <h2>
-                <a href="contact.html">CONTACT ME</a>
-              </h2>
-        </div></center>
+      <center>
+          <a href="contact.html"><button class="button" style="vertical-align:middle"><span>CONTACT ME</span></button></a>
+      </center>
 </div>
 
 <div class="containerF">
-  <h3>© 2020 AYUSH SAGAR.</h3>
+  <h3>© 2021 AYUSH SAGAR.All rights reserved.</h3>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -147,13 +136,14 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
 </script>
 <script>
-  var preloader = document.getElementById('loading');
-  function myfunction(){
-    preloader.style.display = "none";
-  }
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
 </script>
+
 
 
 
