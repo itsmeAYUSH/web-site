@@ -315,9 +315,11 @@ input[type="checkbox"]{
     margin-left: 10px;
     margin-bottom: 20px;
     margin-right: 10px;
+
   }
   .box{
     margin:0px 0px 30px 0px;
+    width:auto;
   }
 }
 .containerD{
@@ -351,12 +353,17 @@ input[type="checkbox"]{
   background:#222831;
   color:WHITE;
   height: 100px;
-  padding:37px;
+  padding:37px 0px ;
 }
 .containerF h3{
   font-size: 20px;
 }
+@media (max-width:550px) {
+  .containerF h3{
+    font-size: 17px;
+  }
 
+}
 .button {
   display: inline-block;
   border-radius: 50px;
