@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <title>contact</title>
     <link rel="stylesheet" href="Cstyle.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="shortcut icon" href="logox.svg">
   </head>
   <body>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
 
       <div class="top">
         <h2>CONTACT ME</h2>
@@ -29,6 +33,10 @@
               <input type="submit" class="form-contorl submit"  value="SEND MESSAGE">
           </div>
         </form>
+<div class="myBtn">
+<a href="index.html"> <img src="left.svg" alt="" height="50px";></a>
+<h3>back</h3>
+</div>
 
 
 
@@ -53,10 +61,10 @@
 
 
 
-
-
-
-
-
+<script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
   </body>
 </html>

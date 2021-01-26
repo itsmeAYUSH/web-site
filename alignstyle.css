@@ -3,7 +3,9 @@
 
 
 
-
+html {
+    scroll-behavior: smooth;
+}
 *{
   padding: 0;
   margin: 0;
@@ -27,6 +29,10 @@ font-weight:bold ;
 h3{
   font-size: 22px;
 }
+h4{
+  font-size: 15px;
+  font-family: sans-serif;
+}
 p{
   font-size: 21px;
 }
@@ -35,13 +41,20 @@ body{
 }
 nav{
   display: flex;
-  height: 100px;
+  height: 80px;
   width: 100%;
   background: #2f3847;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
+  position:fixed;
+  z-index: 1;
+}
+@media (max-width :1000px) {
+  nav {
+    position:relative;
+  }
 }
 nav.logo{
   font-size: 35px;
@@ -93,11 +106,11 @@ input[type="checkbox"]{
   }
   nav ul{
     position: fixed;
-    top: 100px;
+    top: 80px;
     left: -100%;
-    background: #111;
+    background: #2f3847;
     height: 100vh;
-    width: 100%;
+    width: 75%;
     text-align: center;
     display: block;
     transition: all 0.3s ease;
@@ -182,7 +195,6 @@ input[type="checkbox"]{
       margin-bottom:200px;
 }
 
-
 .slantedDivA:after{
       position: absolute;
       width: 100%;
@@ -197,7 +209,6 @@ input[type="checkbox"]{
       transform-origin: top left;
       transform: skewY(4deg);
 }
-
 
 
 .containerA{
@@ -221,7 +232,7 @@ input[type="checkbox"]{
 }
 }
 
-@media (max-width:800px){
+@media (max-width:1200px){
   .slantedDivA:after{
       height:60%;
       top: 0;
@@ -239,9 +250,15 @@ input[type="checkbox"]{
     height:73%;
 }
 }
+.about-area, .port-area, .service-area, .contact-area{
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: -50px;
+}
+
 .containerB{
-  margin: 200px 0px 100px 100px;
-  margin-right: 550px;
+  margin: 100px 550px 50px 100px;
 }
 .containerB h2{
   margin-left: 30px;
@@ -251,6 +268,7 @@ input[type="checkbox"]{
 @media (max-width:850px){
   .containerB{
   margin: 50px 50px 50px 50px;
+
   }
 }
 .containerC{
@@ -275,8 +293,6 @@ input[type="checkbox"]{
     padding: 30px 50px 90px 50px;
   }
 }
-
-
 .BOXES{
   display: flex;
   top:-60px;
@@ -309,13 +325,11 @@ input[type="checkbox"]{
   border-radius: 10px;
 }
 @media (max-width: 1200px){
-
   .BOXES{
     display: grid;
     margin-left: 10px;
     margin-bottom: 20px;
     margin-right: 10px;
-
   }
   .box{
     margin:0px 0px 30px 0px;
@@ -333,36 +347,31 @@ input[type="checkbox"]{
   .containerD{
     padding:25px;
     }
-
   .containerD h2{
     font-size: 20px;
     letter-spacing: 5px;
   }
 }
 .containerE{
-  padding:40px 0px 40px 0px;
+  padding:10px 0px 30px 0px;
   background:#fff8c1;
   line-height: 70px;
 }
 .containerE a{
     margin:auto 20px auto ;
 }
-
 .containerF{
   text-align:center;
   background:#222831;
-  color:WHITE;
-  height: 100px;
-  padding:37px 0px ;
+  color:white;
+  height: 80px;
+  padding:32px 0px ;
 }
-.containerF h3{
-  font-size: 20px;
-}
+
 @media (max-width:550px) {
   .containerF h3{
     font-size: 17px;
   }
-
 }
 .button {
   display: inline-block;
@@ -385,7 +394,6 @@ input[type="checkbox"]{
   position: relative;
   transition: 0.5s;
 }
-
 .button span:after {
 
   content: '\00bb';
@@ -410,15 +418,14 @@ input[type="checkbox"]{
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 10px;
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #ecb390;
-  color: white;
+  background-color: #f6d887;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 25px;
+  padding: 10px;
+  border-radius: 50%;
 }
 #myBtn:hover {
   background-color: #555;
@@ -429,7 +436,7 @@ input[type="checkbox"]{
     width: 50px;
     padding: 10px;
     border-radius: 20px;
-    bottom: 30px;
+    bottom: 50px;
     right: 10px;
   }
 #myBtn img{
@@ -438,7 +445,7 @@ input[type="checkbox"]{
 }
 
 .wave {
-    position: ;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -447,7 +454,7 @@ input[type="checkbox"]{
 }
 
 .wave svg {
-    position: relative;
+    position: ;
     display: block;
     width: calc(100% + 1.3px);
     height: 100px;
