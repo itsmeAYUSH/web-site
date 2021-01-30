@@ -104,6 +104,7 @@ input[type="checkbox"]{
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
   }
+
   nav ul{
     position: fixed;
     top: 80px;
@@ -282,10 +283,10 @@ input[type="checkbox"]{
   width:100%;
 }
 .containerC p{
-  padding: 50px 200px 100px 200px;
+  padding: 50px 200px 150px 200px;
 }
 .containerC h2{
-  padding-top: 40px;
+  padding-top: 80px;
   color:#222831;
 }
 @media (max-width:800px) {
