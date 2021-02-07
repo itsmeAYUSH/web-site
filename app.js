@@ -1,3 +1,18 @@
-const t1=gsap.timeline({ defaults: { ease: "power1.out" } });
-t1.to(".h1",{ y:'0%', duration:1,stagger:0.25});
-t1.to(".text",{ y:'0%', duration:1,stagger:0.25});
+ $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+
+   
+
+
+
+
+
+
+ayush = ()=> {
+document.querySelectorAll('.containerA h2')[1].innerHTML = ""
+}
+setTimeout(ayush, 2000);
+
