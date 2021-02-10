@@ -250,12 +250,7 @@ input[type="checkbox"]{
     height:73%;
 }
 }
-.about-area, .port-area, .service-area, .contact-area{
-    position: relative;
-    display: flex;
-    width: 100%;
-    top: -50px;
-}
+
 
 .containerB{
   margin: 100px 550px 50px 100px;
@@ -468,4 +463,8 @@ input[type="checkbox"]{
 
 .wave .shape-fill {
     fill: #ffc85c;
+}
+
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 1s;
 }
